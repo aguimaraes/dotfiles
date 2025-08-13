@@ -14,7 +14,7 @@ This is a personal dotfiles repository for managing Linux desktop configuration 
 
 ### Arch Linux
 ```bash
-sudo pacman -S stow tmux hyprland kitty rofi dolphin hyprpaper brightnessctl wireplumber playerctl google-chrome
+sudo pacman -S stow tmux hyprland kitty rofi dolphin hyprpaper hyprlock brightnessctl wireplumber playerctl google-chrome
 ```
 
 ### macOS (Homebrew)
@@ -33,6 +33,7 @@ sudo apt install stow tmux kitty rofi dolphin brightnessctl wireplumber-tools pl
 ### Optional Applications Referenced
 - **google-chrome-stable** - Web browser (Super+I binding)
 - **hyprpolkitagent** - Authentication agent for Hyprland
+- **hyprlock** - Screen locker for Hyprland (Super+Shift+L binding)
 - **brightnessctl** - Screen brightness control
 - **playerctl** - Media player control
 
@@ -40,6 +41,7 @@ sudo apt install stow tmux kitty rofi dolphin brightnessctl wireplumber-tools pl
 
 The repository follows GNU Stow conventions:
 - `.config/` - Application configuration directories that mirror `~/.config/`
+- `.config/hypr/hyprlock.conf` - Screen locker configuration with custom styling
 - `.stow-local-ignore` - Excludes git metadata and documentation from being stowed
 - Each configuration can be stowed independently or together
 
@@ -78,6 +80,7 @@ tmux source-file ~/.config/tmux/tmux.conf
 - Browser: google-chrome-stable (Super+I) 
 - Launcher: rofi (Super+Space)
 - File manager: dolphin (Super+E)
+- Screen lock: hyprlock (Super+Shift+L)
 - Media keys configured for playerctl, wpctl, and brightnessctl
 
 ### tmux (`.config/tmux/tmux.conf`)

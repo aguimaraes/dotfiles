@@ -18,7 +18,7 @@ stow .
 
 ### Arch Linux
 ```bash
-sudo pacman -S stow tmux hyprland kitty rofi dolphin hyprpaper brightnessctl wireplumber playerctl google-chrome grim slurp wl-clipboard
+sudo pacman -S stow tmux hyprland kitty rofi dolphin hyprpaper hyprlock brightnessctl wireplumber playerctl google-chrome grim slurp wl-clipboard
 ```
 
 ### macOS (Homebrew)
@@ -78,6 +78,7 @@ stow -n .
 #### Special
 - `Super + ` ` - Toggle scratchpad workspace
 - `Super + Shift + ` ` - Move window to scratchpad
+- `Super + Shift + L` - Lock screen (hyprlock)
 
 ### tmux
 - `Ctrl + S` - Prefix key
