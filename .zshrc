@@ -39,6 +39,10 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
+# ESP32 IDF aliases
+alias getidf='source ~/src/esp-idf/export.sh'
+alias idf='idf.py'
+
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
 
@@ -47,3 +51,5 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
+
+eval $(thefuck --alias)
