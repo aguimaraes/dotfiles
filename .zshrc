@@ -7,7 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # environment variables affecting plugins must be set before the plugin is loaded
 export ZSH_TMUX_AUTOSTART=true
 
-ZSH_THEME="agnosterzak"
+ZSH_THEME="agnoster"
 
 plugins=(
     git
