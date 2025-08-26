@@ -1,5 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.bin:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -43,8 +42,6 @@ alias lt='ls --tree'
 alias getidf='source ~/src/esp-idf/export.sh'
 alias idf='idf.py'
 
-# Set-up FZF key bindings (CTRL R for fuzzy history finder)
-source <(fzf --zsh)
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -52,4 +49,5 @@ SAVEHIST=10000
 setopt appendhistory
 
 
-eval $(thefuck --alias)
+# Set-up FZF key bindings (CTRL R for fuzzy history finder)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
