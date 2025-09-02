@@ -4,3 +4,14 @@ vim.g.loaded_netrwPlugin = 1
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
+-- set clipboard
+vim.opt.clipboard = "unnamedplus"
+
+vim.opt.cursorline = true
+vim.opt.hidden = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.title = true
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
